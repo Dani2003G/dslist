@@ -3,6 +3,8 @@ package com.devsuperior.dslist.entities;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.math.BigDecimal;
+
 @Entity
 @Getter
 @Setter
@@ -25,10 +27,14 @@ public class Game {
 
     private String platforms;
 
+    private BigDecimal score;
+
     private String imgUrl;
 
+    @Column(columnDefinition = "TEXT")
     private String shortDescription;
 
+    @Column(columnDefinition = "TEXT")
     private String longDescription;
 
 }

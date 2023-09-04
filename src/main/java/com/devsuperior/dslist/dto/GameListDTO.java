@@ -1,11 +1,15 @@
 package com.devsuperior.dslist.dto;
 
 import com.devsuperior.dslist.entities.GameList;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Getter
+@Setter
 @NoArgsConstructor
+@AllArgsConstructor
 public class GameListDTO {
 
     private Long id;
